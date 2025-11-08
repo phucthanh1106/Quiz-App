@@ -1,14 +1,19 @@
-import "./index.css"
-import Quiz from "./components/quiz"
+import "./index.css";
+import Quiz from "./components/quiz";
+import Results from "./components/results.jsx";
+import FunkyTitle from "./components/funkytitle.jsx";
+
 
 function App() {
 
   return (
-    <div className="app-container">
-      <h1>Quiz App</h1>
+    <>
+      <FunkyTitle text="Thanh's facts"/>
 
-      <Quiz/>
-    </div>
+      <div className="app-container">
+        <Quiz/>
+      </div>
+    </>
   )
 }
 
