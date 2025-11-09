@@ -68,7 +68,17 @@ function Quiz() {
 
     /* Handling when the quiz is finished */
     if (isQuizFinishied) {
-        return <Results />
+        return <Results userAnswers={userAns} questionBank={questionBank} restartQuiz={restartQuiz}/>
+    }
+
+    /* Restarting the quiz 
+    => Returning all of the states to their initial values
+    */
+
+    function restartQuiz() {
+        setUserAns(initialAns);
+        setCurQues(0);
+        setIsQuizFinished(false);
     }
 
     return (
