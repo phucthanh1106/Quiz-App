@@ -19,7 +19,7 @@ function Results({ questionBank, userAnswers, restartQuiz}) {
     return (
         <div>
             <h2>Quiz Completed!!!</h2>
-            <p>Your score: {score}/{questionBank.length}</p>
+            <p className="score">Your score: {score}/{questionBank.length}</p>
             <button className="restart-button" onClick={restartQuiz}>Restart Quiz</button>
         </div>
     )
