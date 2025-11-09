@@ -1,40 +1,8 @@
 import React, { useState } from "react";
 import Results from "./results";
+import questionBank from "./questionbank";
 
 function Quiz() {
-    const questionBank = [
-        {
-            question: "When is Thanh's birthday?",
-            options: ["11/06", "20/09", "30/12", "21/03"],
-            answer: "11/06",
-        },
-        {
-            question: "What is Thanh's favorite dish?",
-            options: ["Thit kho", "Cua hoang de", "Thit cho", "Bun thang"],
-            answer: "Thit kho",
-        },
-        {
-            question: "Why does Thanh work?",
-            options: [
-            "Buy clothes", 
-            "Get a fancy motorbike", 
-            "To be able to live in NYC", 
-            "All",
-            ],
-            answer: "All",
-        },
-        {
-            question: "What is Thanh's major?",
-            options: [
-            "Business", 
-            "Mechanical Engineer", 
-            "Computer Science", 
-            "Economics",
-            ],
-            answer: "Computer Science",
-        },
-    ];
-
     /* Handling user's options */
     const initialAns = Array(questionBank.length).fill(null);
 
